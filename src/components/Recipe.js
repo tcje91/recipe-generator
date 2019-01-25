@@ -16,7 +16,9 @@ const Recipe = ({ ingredients, showRecipe }) => {
     "sweat",
     "whisk",
     "puree",
-    "incinerate"
+    "incinerate",
+    "serenade",
+    "ask for guidance from"
   ];
   return (
     <div>

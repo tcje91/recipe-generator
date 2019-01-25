@@ -8,7 +8,7 @@ class IngredientAdder extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" onChange={this.handleChange} value={this.state.newIngredient}/>
+        <input type="text" placeholder="Enter an ingredient" onChange={this.handleChange} value={this.state.newIngredient}/>
         <button type="submit">Add ingredient</button>
       </form>
     );
