@@ -4,6 +4,7 @@ import IngredientAdder from './components/IngredientAdder';
 import IngredientList from './components/IngredientList';
 import Recipe from './components/Recipe';
 import GenerateButton from './components/GenerateButton';
+import ResetButton from './components/ResetButton';
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
         <IngredientList ingredients={this.state.ingredients} removeIngredient={this.removeIngredient}/>
         <GenerateButton changeState={this.changeState} />
         <Recipe ingredients={this.state.ingredients} showRecipe={this.state.showRecipe}/>
+        <ResetButton resetState={this.resetState}/>
       </div>
     );
   }
@@ -40,6 +42,8 @@ class App extends Component {
   }
 
   changeState = () => this.setState({ showRecipe: true })
+
+  resetState = () => this.setState({ ingredients: [], showRecipe: false })
 }
 
 export default App;
