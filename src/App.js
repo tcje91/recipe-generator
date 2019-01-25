@@ -16,6 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Recipe Generator</h1>
+        <p>Enter your ingredients then click "Generate Recipe"</p>
         <IngredientAdder addIngredient={this.addIngredient}/>
         <IngredientList ingredients={this.state.ingredients} removeIngredient={this.removeIngredient}/>
         <GenerateButton changeState={this.changeState} />
